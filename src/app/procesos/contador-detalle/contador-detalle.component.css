@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+.header{
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.header .card-body label{
+  color: black;
+  font-weight: bolder;
+  padding-right: 5px;
+}
+
+.header .card-body button{
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: rgb(3, 80, 80);
+    color: #fff;
+    padding: 10px;
+}
+.mat-drawer-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+   display: none;
+}
+
+.mb-4{
+  margin-bottom: 15px!important;
+}
+
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.5rem;
+}
+
+table{
+  width: 100%;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0; 
+  margin-left: -15px;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  padding: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-right-style: inset;
+  border-right-width: 1px;
+  text-align: center;
+}
+
+th.mat-header-cell{
+  font-weight: bolder;
+    font-size: initial;
+    color: teal;
+}

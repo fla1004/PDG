@@ -1,0 +1,15 @@
+.text-gray-200{
+    color: rgb(3, 80, 80)!important;
+    cursor: pointer;
+    
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.d-sm-flex.align-items-center.justify-content-between.mb-4 {
+    margin-left: 10px;
+}
+
+.mb-4 {
+    margin-bottom: 0.5rem!important;
+}

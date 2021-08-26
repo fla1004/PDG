@@ -1,0 +1,55 @@
+
+<div class="header">
+    <div class="d-sm-flex align-items-center justify-content-between ">
+        <h1 class="h3 mb-0 ">registros de aplicación engobe y Esmalte</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm shadow-sm">
+            <i class="fas fa-download fa-sm text-white-50"></i>Generar Reporte</a>
+    </div>
+
+    <div>
+        <app-datepickers></app-datepickers>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+           <div class="card position-relative">
+            <div class="card-header">
+                <h2 class="text-100">Engobe</h2>
+            </div>
+                <app-tabla-engobe></app-tabla-engobe>                
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4"> 
+            <div class="card position-relative">
+                <div class="card-header">
+                    <h2 class="text-100">Esmalte</h2>
+                </div>
+                <app-tabla-esmalte></app-tabla-esmalte>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+               <div class="card position-relative">
+                <div class="card-header">
+                    <h2 class="text-100">Grafico Engobe</h2>
+                </div>
+                    
+                    <app-grafica-engobe></app-grafica-engobe>             
+                </div>
+            </div>
+    
+            <div class="col-lg-6 mb-4"> 
+                <div class="card position-relative">
+                    <div class="card-header">
+                        <h2 class="text-100">Grafico Esmalte</h2>
+                    </div>
+                    <app-grafica-esmalte></app-grafica-esmalte>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './procesos/dashboard/dashboard.component';
-import { ContadorDetalleComponent } from './procesos/contador-detalle/contador-detalle.component';
-import { PruebaComponent } from './procesos/contador-detalle/prueba/prueba.component';
-import { DetalleEngobeComponent } from './procesos/dashboard/detalle-aplicacion/detalle-engobe/detalle-engobe.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ContadorDetalleComponent } from './dashboard/contador-detalle/contador-detalle.component';
+import { AplicacionDetalleComponent } from './dashboard/aplicacion-detalle/aplicacion-detalle.component';
 
 const routes: Routes = [
   {
@@ -15,10 +14,7 @@ const routes: Routes = [
       component: ContadorDetalleComponent,     
     },
     { path:'detalleEngobe',
-    component: DetalleEngobeComponent,     
-    },
-    { path:'prueba',
-      component: PruebaComponent,     
+    component: AplicacionDetalleComponent,     
     },
 ];
 

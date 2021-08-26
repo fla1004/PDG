@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  padding: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-right-style: inset;
+  border-right-width: 1px;
+  text-align: center;
+}
+  
+th.mat-header-cell{
+ font-weight: bold;
+  font-size: initial;
+  
+}
+
+.mat-paginator, .mat-paginator-icon{
+  color: rgb(3, 80, 80);
+  font-weight: bolder;
+}

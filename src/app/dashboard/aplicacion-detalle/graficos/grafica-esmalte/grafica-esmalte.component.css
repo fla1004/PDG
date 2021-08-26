@@ -1,0 +1,32 @@
+.card-body {
+    padding: 0;
+    margin: 0;
+}
+
+#chart_div {
+    width:550px;
+    height:430px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.alerta{
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    #chart_div {
+        width:450px;
+        height:430px;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

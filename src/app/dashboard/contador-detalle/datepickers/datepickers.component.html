@@ -1,0 +1,25 @@
+<div class="card position-relative">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <label >Desde: </label>
+                        <input type="date" type="date" [(ngModel)]="dataPicker1" id="dtp1"> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <label >Hasta: </label>
+                        <input type="date" type="date" [(ngModel)]="dataPicker2" id="dtp2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button (click)="consulta()"> Consulta</button>
+    
+    </div>
+</div>

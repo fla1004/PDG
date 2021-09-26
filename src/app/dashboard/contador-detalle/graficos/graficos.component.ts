@@ -12,11 +12,19 @@ export class GraficosComponent implements OnInit {
   
   constructor(private contadorServicio: ContadorService) { }
 
-  title = 'googlechart';
+  title = 'Grafica contador';
   type = 'LineChart';  
   data;
   columnNames = ["Fecha", "Secadero", "Horno"];
-  
+
+  options = {
+    legend: '1',
+    colors: ['#FF9900', 'red'],
+    series: {
+      0: { lineWidth: 2 },
+      1: { lineWidth: 2 },
+    }
+  };
 
   ngOnInit(): void 
   {   

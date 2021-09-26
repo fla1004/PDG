@@ -24,20 +24,25 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContadorDetalleComponent } from './dashboard/contador-detalle/contador-detalle.component';
 import { AplicacionComponent } from './dashboard/aplicacion/aplicacion.component';
-import { EngobeComponent } from './dashboard/aplicacion/engobe/engobe.component';
-import { EsmalteComponent } from './dashboard/aplicacion/esmalte/esmalte.component';
-import { TablaEsmalteComponent } from './dashboard/aplicacion-detalle/tablas/tabla-esmalte/tabla-esmalte.component';
-import { DatepickersComponent } from './dashboard/aplicacion-detalle/datepickers/datepickers.component';
-import { AplicacionDetalleComponent } from './dashboard/aplicacion-detalle/aplicacion-detalle.component';
-import { TablaEngobeComponent } from './dashboard/aplicacion-detalle/tablas/tabla-engobe/tabla-engobe.component';
+
+import { TablaEsmalteComponent } from './dashboard/aplicacion-detalle/esmalte/tabla-esmalte/tabla-esmalte.component';/* './dashboard/aplicacion-detalle/tablas/tabla-esmalte/tabla-esmalte.component';*/
 import { ContadorComponent } from './dashboard/contador/contador.component';
 import { TablaComponent } from './dashboard/contador-detalle/tabla/tabla.component';
 import { DatepickersComponent2 } from './dashboard/contador-detalle/datepickers/datepickers.component';
 
 import { GoogleChartsModule } from 'angular-google-charts';
 import { GraficosComponent } from './dashboard/contador-detalle/graficos/graficos.component';
-import { GraficaEngobeComponent } from './dashboard/aplicacion-detalle/graficos/grafica-engobe/grafica-engobe.component';
-import { GraficaEsmalteComponent } from './dashboard/aplicacion-detalle/graficos/grafica-esmalte/grafica-esmalte.component';
+import { GraficaEsmalteComponent } from './dashboard/aplicacion-detalle/esmalte/grafica-esmalte/grafica-esmalte.component';/*'./dashboard/aplicacion-detalle/graficos/grafica-esmalte/grafica-esmalte.component';*/
+
+import { EsmalteComponent } from './dashboard/aplicacion-detalle/esmalte/esmalte.component';
+
+import { DtpEsmalteComponent } from './dashboard/aplicacion-detalle/esmalte/dtp-esmalte/dtp-esmalte.component';
+import { EngobeComponent } from './dashboard/aplicacion-detalle/engobe/engobe.component';
+import { DtpEngobeComponent } from './dashboard/aplicacion-detalle/engobe/dtp-engobe/dtp-engobe.component';
+import { TablaEngobeComponent } from './dashboard/aplicacion-detalle/engobe/tabla-engobe/tabla-engobe.component';
+import { GraficaEngobeComponent } from './dashboard/aplicacion-detalle/engobe/grafica-engobe/grafica-engobe.component';
+import { EngobeComponent2 } from './dashboard/aplicacion/engobe/engobe.component';
+import { EsmalteComponent2 } from './dashboard/aplicacion/esmalte/esmalte.component';
 
 @NgModule({
   declarations: [
@@ -49,15 +54,17 @@ import { GraficaEsmalteComponent } from './dashboard/aplicacion-detalle/graficos
     AplicacionComponent,
     EngobeComponent,
     EsmalteComponent,
-    TablaEngobeComponent,
-    TablaEsmalteComponent,
-    DatepickersComponent,
-    AplicacionDetalleComponent,
     TablaComponent,
     DatepickersComponent2,
     GraficosComponent,
-    GraficaEngobeComponent,
     GraficaEsmalteComponent,
+    DtpEsmalteComponent,
+    TablaEsmalteComponent,
+    DtpEngobeComponent,
+    TablaEngobeComponent,
+    GraficaEngobeComponent,
+    EngobeComponent2,
+    EsmalteComponent2 
   ],
   imports: [
     BrowserModule,

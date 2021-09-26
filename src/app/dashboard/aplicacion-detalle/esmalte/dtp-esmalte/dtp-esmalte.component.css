@@ -1,0 +1,33 @@
+.card-body button{
+    border: none;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: #078f8f;
+    color: #fff;
+    padding: 10px;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.8rem;
+}
+.card-body label{
+    color: black;
+    font-weight: bolder;
+    padding-right: 5px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkcyan;
+}
+.d-sm-flex.align-items-center.justify-content-between {
+    padding: 10px;
+}

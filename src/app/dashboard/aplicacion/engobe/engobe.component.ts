@@ -3,11 +3,11 @@ import { Aplicacion } from '../../interfaces/aplicacion';
 import { AplicacionService } from '../../services/aplicacion.service';
 
 @Component({
-  selector: 'app-engobe',
+  selector: 'app2-engobe',
   templateUrl: './engobe.component.html',
   styleUrls: ['./engobe.component.css']
 })
-export class EngobeComponent implements OnInit {
+export class EngobeComponent2 implements OnInit {
 
   aplicacion : Aplicacion[] =[];
 

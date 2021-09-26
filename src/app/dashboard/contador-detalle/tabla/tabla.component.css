@@ -10,14 +10,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-right-width: 1px;
   text-align: center;
 }
+
+th.mat-header-cell, td.mat-footer-cell {
+  color: #078f8f;
+}
   
 th.mat-header-cell{
- font-weight: bold;
-  font-size: initial;
-  
+  font-weight: bold;
+  font-size: initial; 
 }
 
-.mat-paginator, .mat-paginator-icon{
-  color: rgb(3, 80, 80);
-  font-weight: bolder;
-}

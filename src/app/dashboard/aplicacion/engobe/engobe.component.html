@@ -1,18 +1,37 @@
-<div class="background-app img">
-
-    <div class="title">
-        <h2 class="text-100">Engobe</h2>
-    </div>
-
     <div *ngFor = "let x of aplicacion" >
         <div *ngIf="x.IdSector == 1">
-
-            <div class="col-xl-4 col-md-4 mb-4">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-4">
+                    <div class="card bg-primary text-white shadow">
+                        <div class="card-body">
+                            Densidad
+                            <div class="text-white-50">{{x.Densidad}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-success text-white shadow">
+                        <div class="card-body">
+                            Temperatura
+                            <div class="text-white-50">{{x.Temperatura}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-info text-white shadow">
+                        <div class="card-body">
+                            Viscosidad
+                            <div class="text-white-50 ">{{x.Viscosidad}}</div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100">
-                    <div class="card-body"> 
+                    <div class="card-data"> 
                         <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                <div class="text-xs font-weight-bold text-densidad text-uppercase mb-1">
                                     Densidad
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800" >
@@ -24,9 +43,9 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-4 mb-4">
+            <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100">
-                    <div class="card-body"> 
+                    <div class="card-data"> 
                         <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
@@ -41,9 +60,9 @@
                 </div>
             </div>
 
-            <div class="col-xl-4 col-md-4 mb-4">
+            <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100">
-                    <div class="card-body"> 
+                    <div class="card-data"> 
                         <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
@@ -56,7 +75,9 @@
                         </div>
                     </div>
                 </div>
+            </div>-->
             </div>
+            
         </div>
     </div>
-</div>
+

@@ -9,14 +9,5 @@
     } catch (Exception $e) {
         echo "Ocurrió algo con la base de datos: " . $e->getMessage();
     }
-    /*
-   $dbhost = "localhost";
-   $dbuser = "root";
-   $dbpass = "70738098";
-   $dbname = "pdg";
 
-   $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname)
-       or die("Problemas en la conexion");*/
-
-  
 ?>

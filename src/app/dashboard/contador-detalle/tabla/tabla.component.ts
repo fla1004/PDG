@@ -13,7 +13,7 @@ export class TablaComponent implements OnInit {
 
   contador: Contador[]=[];
 
-  displayedColumns: string[] = ['id','Secadero', 'Horno', 'Fecha'];
+  displayedColumns: string[] = ['id','Fecha','Secadero', 'Horno', 'Perdidos', 'Registrados' ];
   dataSource = new MatTableDataSource(this.contador);
 
   constructor(private contadorServicio: ContadorService) {
@@ -26,6 +26,7 @@ export class TablaComponent implements OnInit {
   ngOnInit(): void {
     if(this.get_fecha() == undefined){
       this.selectUltimosRegistros();
+
     }
     else{
       this.get_fecha();

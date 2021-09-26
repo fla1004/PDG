@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContadorDetalleComponent } from './dashboard/contador-detalle/contador-detalle.component';
-import { AplicacionDetalleComponent } from './dashboard/aplicacion-detalle/aplicacion-detalle.component';
+import { EsmalteComponent } from './dashboard/aplicacion-detalle/esmalte/esmalte.component';
+import { EngobeComponent } from './dashboard/aplicacion-detalle/engobe/engobe.component';
 
 const routes: Routes = [
   {
@@ -13,9 +14,13 @@ const routes: Routes = [
     { path:'contador',
       component: ContadorDetalleComponent,     
     },
-    { path:'detalleEngobe',
-    component: AplicacionDetalleComponent,     
-    },
+    { path:'aplicacion-engobe',
+    component: EngobeComponent,     
+    }, 
+    { path:'aplicacion-esmalte',
+    component: EsmalteComponent,     
+    }
+    
 ];
 
 @NgModule({

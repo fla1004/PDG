@@ -16,7 +16,6 @@ export class ContadorService {
 
   
   Url = environment.baseUrl;
-  headers: HttpHeaders | undefined;
   
   constructor(private http: HttpClient) { 
   }
@@ -39,5 +38,4 @@ export class ContadorService {
   select_entre_fechas(fecha1: string,fecha2: string) {
     return this.http.get(`${this.Url}contador/selectEntreFechas.php?fecha1=${fecha1}&&fecha2=${fecha2}`);
   }
-
 }

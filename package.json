@@ -23,6 +23,7 @@
     "@angular/router": "~11.2.0",
     "angular-google-charts": "^2.2.2",
     "apexcharts": "^3.27.2",
+    "file-saver": "^2.0.5",
     "ng-apexcharts": "^1.5.12",
     "rxjs": "~6.6.0",
     "sweetalert2": "^11.0.19",

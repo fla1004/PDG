@@ -1,5 +1,5 @@
 <?php
-    header("Access-Control-Allow-Origin: http://localhost:4200");
+    include '../headers.php';
 
     if (empty($_GET["fecha1"]) && empty($_GET["fecha2"])) {
         exit("Fechas vacias");

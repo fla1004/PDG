@@ -1,3 +1,33 @@
+.mat-toolbar a {
+    font-size: 26px;
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.mat-toolbar a:hover{
+  color: rgb(197, 196, 196);
+  text-decoration: none;
+}
+
+.mat-toolbar.mat-primary, .mat-icon-button {
+  background:#078f8f;
+  color: #fff;
+}
+
+.mat-sidenav-container .mat-sidenav{
+  background-color: #636a70e6;
+  width: 150px;
+  font-size: 15px;
+  border-right: 5px solid #078f8f;
+  
+}
+
 .mat-toolbar-row, .mat-toolbar-single-row {
   display: flex;
   box-sizing: border-box;
@@ -7,74 +37,41 @@
   align-items: center;
   white-space: nowrap;
 }
-.mat-toolbar.mat-primary, .mat-icon-button, .mat-sidenav-container .mat-sidenav  {
-  background:rgb(3, 80, 80);
-  color: #fff;
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
 }
 
-.example-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+li a {
+  display: block;
+  color: rgb(236, 235, 235);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(88, 88, 88);
+  padding: 10px;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+  border-left: 5px solid #078f8f;
 }
 
 .example-is-mobile .example-toolbar {
   position: fixed;
   z-index: 2;
 }
-
-h1.example-app-name {
-  margin-left: 8px;
-}
-
 .example-sidenav-container {
   flex: 1;
 }
-
 .example-is-mobile .example-sidenav-container {
   flex: 1 0 auto;
 }
 
-.mat-list-item {
-  margin-left: 0;
-  margin-right: 0;
-  padding:0;
-  margin-top:0;
-  margin-bottom: 0;
-} 
-
-.mat-list-item , a{
-  color: rgba(255, 255, 255, 0.986);
-  
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.247);
-} 
-
-a:hover{
-  color: rgba(255, 255, 255, 0.774);
-} 
-
-
-.mat-list-item , a, i{
-  padding-right: 10px;
-}
-
-
-h1{
-    font-size: 26px;
-    margin: 0;
-    padding: 6px 0;
-    line-height: 1;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: darkgoldenrod;
+h1.example-app-name {
+  margin-left: 8px;
 }
 
 .navbar-toggler {
@@ -87,9 +84,13 @@ h1{
   color: white;
 }
 
-.mat-drawer-container {
-  background-color: #e2e3e4;; 
-  color: rgba(0,0,0,.87);
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-
-

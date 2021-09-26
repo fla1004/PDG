@@ -13,3 +13,8 @@
 .mb-4 {
     margin-bottom: 0.5rem!important;
 }
+h3{
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

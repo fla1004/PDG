@@ -1,0 +1,34 @@
+<div class="d-sm-flex align-items-center justify-content-between">
+    <h3 class="text-gray-m">Registros aplicación de engobe</h3>
+
+    <a (click)="reporte()" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-download fa-sm text-white-50"></i> Generar Reporte
+    </a>
+</div>
+
+<div class="card position-relative">
+    <div class="card-body">
+        <h3 class="header-title">Seleccione una fecha</h3>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <label >Desde: </label>
+                        <input type="date" type="date" [(ngModel)]="dataPicker1" id="dtp1"> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <label >Hasta: </label>
+                        <input type="date" type="date" [(ngModel)]="dataPicker2" id="dtp2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button (click)="consulta()"> Consultar </button>
+    
+    </div>
+</div>

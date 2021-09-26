@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EngobeComponent } from './engobe.component';
+import { EngobeComponent2 } from './engobe.component';
 
 
 
 @NgModule({
-  declarations: [EngobeComponent],
+  declarations: [EngobeComponent2],
   imports: [
     CommonModule
-  ],exports:[EngobeComponent]
+  ],exports:[EngobeComponent2]
 })
 export class EngobeModule { }

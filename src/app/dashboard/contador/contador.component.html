@@ -1,19 +1,21 @@
 <div class="container-fluid">
 
+    <h3 class="text-gray-m">contador de piezas</h3>
+
     <div class="row">
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            <div class="text-xs font-weight-bold text-p-primary text-uppercase mb-1">
                                 Salida secadero</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800" *ngFor = "let x of contador">
                                 <p > {{x.Secadero}} </p>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-chart-line fa-2x text-gray-300"></i>
+                            <i class="fas fa-arrow-up fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>
@@ -25,14 +27,14 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            <div class="text-xs font-weight-bold text-p-primary text-uppercase mb-1">
                                 Entrada horno</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800" *ngFor = "let x of contador">
                                 {{x.Horno}}
                             </div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-chart-line fa-2x text-gray-300"></i>
+                            <i class="fas fa-arrow-up fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,7 @@
                             </div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-times fa-2x text-gray-300"></i>
+                            <i class="fas fa-arrow-down fa-2x text-p-300"></i>
                         </div>
                     </div>
                 </div>
@@ -68,14 +70,14 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold  text-success text-uppercase mb-1">
+                            <div class="text-xs font-weight-bold  text-p-success text-uppercase mb-1">
                                 Total piezas</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800" *ngFor = "let x of contador">
                                 {{x.Horno}}
                             </div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                            <i class="fas fa-clipboard-list fa-2x text-pp-300"></i>
                         </div>
                     </div>
                 </div>

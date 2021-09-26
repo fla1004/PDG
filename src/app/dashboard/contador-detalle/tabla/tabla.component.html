@@ -5,6 +5,11 @@
         <td mat-cell *matCellDef="let element">{{dataSource.filteredData.indexOf(element)}} </td>
     </ng-container>
 
+    <ng-container matColumnDef="Fecha">
+        <th mat-header-cell *matHeaderCellDef> Fecha </th>
+        <td mat-cell *matCellDef="let element"> {{element.Fecha}} </td>
+    </ng-container>
+
     <ng-container matColumnDef="Secadero">
         <th mat-header-cell *matHeaderCellDef> Secadero </th>
         <td mat-cell *matCellDef="let element"> {{element.Secadero}} </td>
@@ -15,16 +20,19 @@
         <td mat-cell *matCellDef="let element"> {{element.Horno}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="Fecha">
-        <th mat-header-cell *matHeaderCellDef> Fecha </th>
-        <td mat-cell *matCellDef="let element"> {{element.Fecha}} </td>
+    <ng-container matColumnDef="Perdidos">
+        <th mat-header-cell *matHeaderCellDef> Perdidos </th>
+        <td mat-cell *matCellDef="let element"> {{element.Secadero -element.Horno}} </td>
     </ng-container>
 
-   
+    <ng-container matColumnDef="Registrados">
+        <th mat-header-cell *matHeaderCellDef> Total</th>
+        <td mat-cell *matCellDef="let element"> {{element.Horno}} </td>
+    </ng-container>
+
     <tr class="mat-row" *matNoDataRow>
-        <td class="mat-cell" colspan="5">No existen registros el dia de hoy</td>
-    </tr>
-              
+        <td class="mat-cell" colspan="6">No existen registros el dia de hoy</td>
+    </tr>      
           
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EsmalteComponent } from './esmalte.component';
+import { EsmalteComponent2 } from './esmalte.component';
 
 
 
 @NgModule({
-  declarations: [EsmalteComponent],
+  declarations: [EsmalteComponent2],
   imports: [
     CommonModule
-  ], exports:[EsmalteComponent]
+  ], exports:[EsmalteComponent2]
 })
 export class EsmalteModule { }

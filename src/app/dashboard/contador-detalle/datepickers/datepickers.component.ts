@@ -80,7 +80,8 @@ export class DatepickersComponent2 implements OnInit {
       Swal.fire({
           icon: 'error',
           title: 'Esta solicitando registros mayor a la fecha actual',
-          text: 'Porfavor ingrese bien los datos!',
+          text: '¡Porfavor ingrese bien los datos!',
+          confirmButtonColor: "#078f8f"
         })
     );
   }
@@ -89,8 +90,9 @@ export class DatepickersComponent2 implements OnInit {
     return( 
       Swal.fire({
           icon: 'error',
-          title: 'Fechas vacias',
-          text: 'Porfavor ingrese bien los datos!',
+          title: '¡ERROR! Fechas vacías.',
+          text: 'Debe especificar el rango de fechas.',
+          confirmButtonColor: "#078f8f"
         })
     );
   }
@@ -99,8 +101,9 @@ export class DatepickersComponent2 implements OnInit {
     return( 
       Swal.fire({
           icon: 'error',
-          title: 'Las fechas no concuerdan',
-          text: 'Revise la segunda fecha!',
+          title: 'Las fechas no concuerdan.',
+          text: 'Revise la segunda fecha "Hasta".',
+          confirmButtonColor: "#078f8f"
         })
     );
   }
@@ -188,4 +191,34 @@ consulta(){
   
 }
 
+reporte(){
+  let dtp1 = this.dataPicker1;
+  let dtp2 = this.dataPicker2;
+
+  let val_dtp1 = this.conver_val_dtp1();
+  let val_dtp2 = this.conver_val_dtp2();
+
+
+    if(dtp1.touched == false && dtp2.touched == false){
+      window.open('http://localhost/PDG/server/pdf/contador/reportes dia/reporte.php');
+    }
+    else 
+    {
+      if(dtp1.touched != false && dtp2.touched != false){
+        window.open('http://localhost/PDG/server/pdf/contador/reporte entre fechas/reporte.php?fecha1='+val_dtp1+'&fecha2='+val_dtp2);
+      }
+      else
+      {
+        if(dtp1.touched == false)
+        {  
+        window.open('http://localhost/PDG/server/pdf/contador/reporte una fecha/reporte.php?fecha='+val_dtp2);
+        }
+        if(dtp2.touched == false)
+        {  
+        window.open('http://localhost/PDG/server/pdf/contador/reporte una fecha/reporte.php?fecha='+val_dtp1);
+        }
+      }
+      
+    }
+  }
 }

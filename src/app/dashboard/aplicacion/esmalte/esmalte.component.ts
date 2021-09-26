@@ -3,11 +3,11 @@ import { Aplicacion } from '../../interfaces/aplicacion';
 import { AplicacionService } from '../../services/aplicacion.service';
 
 @Component({
-  selector: 'app-esmalte',
+  selector: 'app2-esmalte',
   templateUrl: './esmalte.component.html',
   styleUrls: ['./esmalte.component.css']
 })
-export class EsmalteComponent implements OnInit {
+export class EsmalteComponent2 implements OnInit {
 
   aplicacion : Aplicacion[] =[];
 

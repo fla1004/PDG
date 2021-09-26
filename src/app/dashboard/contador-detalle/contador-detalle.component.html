@@ -1,33 +1,22 @@
-<div class="header">
-
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 ">registros Contador</h1>
-        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-            <i class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a>
-    </div>
-
-    <div class="row">
-
-        <div class="col-lg-6 mb-4">
-            <app-contador-datepickers></app-contador-datepickers>
-                        
-            <div class="graficos">
-                <div class="card-header">
-                    <h2 class="text-100">Grafica Contador</h2>
-                </div>
-
-                <app-graficos></app-graficos>
-            </div>
-            
-        </div>
-
-        <div class="col-lg-6 mb-4">
+<div class="container-fluid">
+    <div>
+        <app-contador-datepickers></app-contador-datepickers>
+    
+        <div class="init-table">
             <div class="card position-relative">
                 <div class="card-header">
-                    <h2 class="text-100">Resumen Contador</h2>
+                    <h3 class="text-gray-m">Registros</h3>
                 </div>
-
                <app-tabla></app-tabla>
+            </div>
+        </div>
+
+        <div class="init-table">
+            <div class="card position-relative">
+                <div class="card-header">
+                    <h3 class="text-gray-m">Graficos</h3>
+                </div>
+                <app-graficos></app-graficos>
             </div>
         </div>
     </div>

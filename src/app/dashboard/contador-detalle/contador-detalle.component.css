@@ -1,9 +1,17 @@
-*{
-  box-sizing: border-box;
+h3{
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-.header{
-  padding-top: 10px;
-  margin: 10px;
+.d-sm-flex{
+  margin:10px;
+}
+
+.card-header {
+  padding: 5px;
+}
+.init-table{
+  margin-top: 7px;
 }
 
 .header .card-body label{
@@ -12,14 +20,6 @@
   padding-right: 5px;
 }
 
-.header .card-body button{
-    border: none;
-    border-radius: 10px;
-    font-weight: 400;
-    background-color: rgb(3, 80, 80);
-    color: #fff;
-    padding: 10px;
-}
 .mat-drawer-content {
   position: relative;
   z-index: 1;
@@ -28,61 +28,18 @@
    display: none;
 }
 
-.mb-4{
-  margin-bottom: 15px!important;
-}
-.col-lg-6{
-  padding-right: 0px;
-}
-
 .card-body{
     flex: 1 1 auto;
     min-height: 1px;
     padding: 0.5rem;
 }
 
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: 0; 
-  margin-left: -15px;
-}
-
-.h3 {
-  font-size: 26px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #6b6c72d0!important;
-}
-.graficos{
-  margin-top: 10px;
-}
-
-.text-100{
-  font-size: 16px;
-  text-transform: uppercase;
-  /*text-align: center;*/
-  font-weight: 700;
-  color: rgb(3, 80, 80);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-
-}
-
-h2{
-  margin: 0;
-  padding: 0;
-}
 .card-header{
   background-color: #f8f9fc;
   border-bottom: 1px solid #e3e6f0;
 }
 .btn{
-  background-color: rgb(3, 80, 80);;
+  background-color: #007bff;
   color: white;
 }
+
